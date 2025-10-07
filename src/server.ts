@@ -9,7 +9,7 @@ const PORT: number = Number(process.env.PORT) || 3000;
 app.use(express.json());
 
 // Conexão com o MongoDB
-const mongoURI = process.env.MONGO_URI as string;
+const mongoURI = process.env.URL as string;
 
 mongoose.connect(mongoURI)
 .then(() => {
